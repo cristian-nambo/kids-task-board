@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kids-task-board/static/css/main.08ea6dbb.css",
+    "main.js": "/kids-task-board/static/js/main.76a025c4.js",
+    "static/js/453.1fd82568.chunk.js": "/kids-task-board/static/js/453.1fd82568.chunk.js",
+    "index.html": "/kids-task-board/index.html",
+    "main.08ea6dbb.css.map": "/kids-task-board/static/css/main.08ea6dbb.css.map",
+    "main.76a025c4.js.map": "/kids-task-board/static/js/main.76a025c4.js.map",
+    "453.1fd82568.chunk.js.map": "/kids-task-board/static/js/453.1fd82568.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08ea6dbb.css",
+    "static/js/main.76a025c4.js"
+  ]
+}
