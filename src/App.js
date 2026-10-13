@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Plus, Trash2 } from 'lucide-react';
 
 function KidsTaskBoard() {
-  const [kids, setKids] = useState([
-    { name: 'Add Name', tasks: [], newTask: '' },
-  ]);
+    const [kids, setKids] = useState(() => {
+    const saved = localStorage.getItem("kidsBoard");
+
+    return saved
+      ? JSON.parse(saved)
+      : [{ name: 'Add Name', tasks: [], newTask: '' }];
+  });
+
+  useEffect(() => {
+    localStorage.setItem(
+      "kidsBoard",
+      JSON.stringify(kids)
+    );
+  }, [kids]);
 
   const handleNameChange = (index, newName) => {
     const updated = [...kids];
